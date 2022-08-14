@@ -91,6 +91,7 @@ def time_stats(df):
     # display the most common start hour
     common_start_hour = pd.to_datetime(df["Start Time"]).dt.strftime("%H").value_counts().index[0]
     
+    # print out the resuts
     print("Most common; ", \
           "- month: %s" % common_month, \
           "- day: %s" % common_day, \
@@ -113,6 +114,7 @@ def station_stats(df):
     # display most frequent combination of start station and end station trip
     common_start_end_station = ("From" + " " + df["Start Station"] + " " + "To" + " " + df["End Station"]).value_counts().index[0]
     
+    # print out the resuts
     print("Most commonly used; ", \
          "- start station: %s" % common_start_station, \
          "- end station: %s" % common_end_station, \
@@ -132,6 +134,7 @@ def trip_duration_stats(df):
     # display mean travel time
     mean_duration = np.mean(df["Trip Duration"])
     
+    # print out the resuts
     print("- total travel time: %s" % total_duration, \
          "- mean travel time: %s" % mean_duration, sep = "\n")
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -146,6 +149,7 @@ def user_stats(df):
     # Display counts of user types
     user_types = df["User Type"].value_counts()
    
+   # print out the resuts
     print("*"*5," Counts of User Types ","*"*5, sep = "")
     print(user_types)
     print("*"*32)
