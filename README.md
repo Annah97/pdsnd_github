@@ -30,5 +30,4 @@ The data files used are as follows:
 - [washington.csv](https://www.capitalbikeshare.com/system-data)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+I would like to thank [Udacity](https://github.com/udacity/pdsnd_github) for giving me a template to start with on this project.
