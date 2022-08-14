@@ -162,6 +162,7 @@ def user_stats(df):
         print(gender)
         print("*"*32)
         print()
+
      # Display earliest, most recent, and most common year of birth
     if 'Birth Year' in df.columns:
         earliest =int(df["Birth Year"].min())
@@ -172,6 +173,7 @@ def user_stats(df):
              "- recent year: %s" % recent, \
              "- common year: %s" % common, sep = "\n")
         print("*"*32)
+        
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
